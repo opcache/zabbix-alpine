@@ -38,7 +38,7 @@ LABEL maintainer="ppabc (ppabc@qq.com)"
 ### Add Folders
        mkdir -p /assets/cron
 
-   ADD root /
+   ADD zabbix-3.4.15/agentd/root /
 
 ### Networking Configuration
    EXPOSE 1025 8025 10050/TCP 
