@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:3.8
 LABEL maintainer="ppabc (ppabc@qq.com)"
 ### Set Defaults
     ARG S6_OVERLAY_VERSION=v1.21.8.0
