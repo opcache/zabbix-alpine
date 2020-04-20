@@ -1,7 +1,7 @@
 FROM opcache/zabbix:3.4.15agentd
 LABEL maintainer="aqzt.com (ppabc@qq.com)"
 
-ADD root /
+ADD zabbix-3.4.15/server/root /
 
 RUN apk update && \
     apk add php7-apache2 php7-session php7-mysqli php7-mbstring sudo && \
