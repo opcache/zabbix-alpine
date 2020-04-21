@@ -1,6 +1,0 @@
-FROM zabbix:web2
-
-COPY ["startup.sh", "/usr/bin/"]
-
-CMD ["/usr/bin/startup.sh"]
-

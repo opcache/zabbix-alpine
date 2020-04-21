@@ -92,12 +92,12 @@ WORKDIR /usr/share/zabbix
 
 VOLUME ["/etc/ssl/nginx"]
 
-COPY ["conf/etc/supervisor/", "/etc/supervisor/"]
-COPY ["conf/etc/zabbix/nginx.conf", "/etc/zabbix/"]
-COPY ["conf/etc/zabbix/web/zabbix.conf.php", "/etc/zabbix/web/"]
-COPY ["conf/etc/nginx/nginx.conf", "/etc/nginx/"]
-COPY ["conf/etc/php7/php-fpm.conf", "/etc/php7/"]
-COPY ["conf/etc/php7/conf.d/99-zabbix.ini", "/etc/php7/conf.d/"]
-COPY ["docker-entrypoint.sh", "/usr/bin/"]
+COPY ["zabbix-4.4.7/web/conf/etc/supervisor/", "/etc/supervisor/"]
+COPY ["zabbix-4.4.7/web/conf/etc/zabbix/nginx.conf", "/etc/zabbix/"]
+COPY ["zabbix-4.4.7/web/conf/etc/zabbix/web/zabbix.conf.php", "/etc/zabbix/web/"]
+COPY ["zabbix-4.4.7/web/conf/etc/nginx/nginx.conf", "/etc/nginx/"]
+COPY ["zabbix-4.4.7/web/conf/etc/php7/php-fpm.conf", "/etc/php7/"]
+COPY ["zabbix-4.4.7/web/conf/etc/php7/conf.d/99-zabbix.ini", "/etc/php7/conf.d/"]
+COPY ["zabbix-4.4.7/web/docker-entrypoint.sh", "/usr/bin/"]
 
 ENTRYPOINT ["docker-entrypoint.sh"]

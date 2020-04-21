@@ -1,0 +1,6 @@
+FROM opcache/zabbix:web-4.4.7
+
+COPY ["zabbix-4.4.7/web/startup.sh", "/usr/bin/"]
+
+CMD ["/usr/bin/startup.sh"]
+
