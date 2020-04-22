@@ -21,4 +21,4 @@ docker run --name zabbix-web-nginx-mysql2 -t \
       -e ZBX_TYPE="frontend" \
       -e ZBX_OPT_TYPE="nginx" \
       --net=host \
-      -d zabbix:web3
+      -d opcache/zabbix:web3-4.4.7
